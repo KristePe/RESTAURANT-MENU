@@ -11,7 +11,6 @@
 
 /* Header */
 header {
-   
   display: flex;
   background-image: url(1844682.jpg);
   background-size: cover;
@@ -70,21 +69,27 @@ section {
   text-align: center;
   justify-content: center;
   border-radius: 20px;
+  border: 1px solid black;
 }
 
-.dish-card ul,li {
-    /* font-family: 'Great Vibes', cursive; */
+.dish-card:hover {
+    background: rgb(201, 201, 201);
+    cursor: pointer;
+}
+
+.dish-card ul,
+li {
+  /* font-family: 'Great Vibes', cursive; */
   font-family: "Merriweather", serif;
   list-style: none;
 }
 
 .dish-card li {
-    /* font-family: 'Great Vibes', cursive; */
-    
-    font-size: 18px;
-    color: dimgrey;
-  }
+  /* font-family: 'Great Vibes', cursive; */
 
+  font-size: 18px;
+  color: dimgrey;
+}
 
 .dish-card-top {
   flex-grow: 1;
@@ -94,12 +99,10 @@ section {
 }
 
 .dish-card-top img {
-  object-fit:cover;
- width: 100%;
- height: fit-content;
- 
-}
+  object-fit: cover;
+  width: 100%;
 
+}
 
 .dish-card-bottom {
   flex-grow: 2;
