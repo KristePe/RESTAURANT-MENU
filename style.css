@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@300;400&display=swap");
+* {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  background-image: url(1844682.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+}
+
+.header-left-side h1 {
+  margin: 0 10px 0 10px;
+  font-family: "Great Vibes", cursive;
+}
+
+.header-right-side {
+  margin: 0 10px 0 10px;
+  font-family: "Merriweather", serif;
+}
+
+.menu-section-row {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: dimgrey;
+}
+
+.menu-section-row h3 {
+  font-family: "Merriweather", serif;
+}
+
+.menu-section-row h3:hover {
+  color: rgb(44, 93, 44);
+}
+
+section {
+  flex-grow: 10;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+
+}
+
+
+
+.dish-card {
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+}
+
+.dish-card img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+   
+
+}
+
+/* footer {
+  display: flex;
+  flex-grow: 1;
+  background: grey;
+} */
