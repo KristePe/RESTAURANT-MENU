@@ -22,6 +22,10 @@ header {
   font-size: 3rem;
 }
 
+/* .sticky {
+  position: fixed;
+  width: 100%
+} */
 .header-left-side h1 {
   margin: 0 10px 0 10px;
   font-family: "Great Vibes", cursive;
@@ -98,12 +102,14 @@ li {
 .dish-card-top {
   flex-grow: 1;
   box-sizing:content-box;
+  height: 50vh;
 }
 
 .dish-card-top img {
-  object-fit: cover;
+  background-size: cover;
+  object-fit:cover;
   width: 100%;
-
+  min-height:100% ;
 }
 
 .dish-card-bottom {
