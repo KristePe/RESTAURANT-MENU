@@ -20,9 +20,6 @@ header {
   justify-content: center;
   color: white;
   font-size: 3rem;
-  
- 
-
 }
 
 .header-left-side h1 {
@@ -35,111 +32,63 @@ header {
   font-family: "Merriweather", serif;
 }
 
-/* Menu row */
-.menu-section-row {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: dimgrey;
-  padding-top: 20px;
-}
-
-.menu-section-row h3 {
-  font-family: "Merriweather", serif;
-}
-
-.menu-section-row h3:hover {
-  color: rgb(64, 130, 64);
-  cursor: pointer;
-}
-
 /* Main section */
 
-section {
-  flex-grow: 10;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  padding: 50px;
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
   background-color: rgb(217, 217, 217);
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px){
-  section {
-   
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    padding: 50px 100px 50px 100px;
-  }
-  header{
-    font-size: 2rem;
-  }
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  section {
-    
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-   
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .main {
+    width: 1260px;
+    margin: auto;
   }
 }
 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  section {
-    
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-
-} 
+.group-name {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  color: dimgrey;
+  background-color: rgb(217, 217, 217);
+  padding-top: 20px;
+}
 
 /* Dish card */
 
 .dish-card {
   display: flex;
+  height: 330px;
+  width: 250px;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   border-radius: 20px;
   background: white;
   overflow: hidden;
+  margin: 20px;
 }
 
 .dish-card:hover {
   background: rgb(245, 245, 231);
   cursor: pointer;
-}
-
-.dish-card ul,
-li {
-  /* font-family: 'Great Vibes', cursive; */
-  font-family: "Merriweather", serif;
-  list-style: none;
-}
-
-.dish-card li {
-  font-family: "Great Vibes", cursive;
-
-  font-size: 18px;
-  color: dimgrey;
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
 .dish-card-top {
-  flex-grow: 1;
+  height: 100px;
   box-sizing: content-box;
-  height: 10vh;
   object-fit: cover;
+  justify-content: flex-start;
 }
 
 .dish-card-top img {
@@ -150,11 +99,57 @@ li {
 }
 
 .dish-card-bottom {
-  flex-grow: 2;
+  color: dimgrey;
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* footer {
+.dish-card-bottom h4, h5 {
+  font-family: "Merriweather", serif;
+  padding-bottom: 10px;
+}
+
+.dish-card-bottom p {
+  font-family: "Great Vibes", cursive;
+}
+
+.drinks-container {
+  height: 170px;
+  width: 250px;
+  margin-top: 10px;
   display: flex;
-  flex-grow: 1;
-  background: grey;
-} */
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+}
+
+.drinks-card {
+  color: dimgrey;
+  font-family: "Merriweather", serif;
+  display: flex;
+  padding-bottom: 0;
+  align-items: baseline;
+}
+
+.drinks-card h5 {
+  color: dimgrey;
+  font-family: "Merriweather", serif;
+}
+
+.drinks-card p {
+  font-size: 16px;
+  font-family: "Great Vibes", cursive;
+  margin: 0 10px 0 5px;
+}
+
+.drinks-container:hover {
+  background: rgb(245, 245, 231);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
