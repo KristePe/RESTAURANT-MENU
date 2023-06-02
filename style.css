@@ -1,36 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@300;400&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+/* HEADER */
+
+.header {
+  height: 40vh;
+  width: 100vw;
 }
 
-/* Header */
-header {
-  display: flex;
-  background-image: url(1844682.jpg);
-  background-size: cover;
+/* .sticky {
+  position: fixed;
+  width: 100%
+} */
+
+.top-header{
+  height:80% ;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.4)),
+  url(/img/petr-sevcovic-fyQr1T3GE34-unsplash.jpg);
   background-position: center;
-  flex-grow: 2;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 3rem;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
-.header-left-side h1 {
-  margin: 0 10px 0 10px;
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.logo{
+  display: flex;
+  color:#fff;
+  font-size:3rem;
+}
+
+.logo-left {
+  margin: 0 10px;
   font-family: "Great Vibes", cursive;
 }
 
-.header-right-side {
-  margin: 0 10px 0 10px;
+.logo-right{
+  margin: 0 10px;
   font-family: "Merriweather", serif;
 }
+
+
+.end-header{
+  height:20%;
+}
+
+.end-header ul{
+  height: 100%;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-around;
+  color: dimgrey;
+  margin: 2rem;
+}
+
+.end-header ul li a{
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color:slategrey;
+}
+
+.end-header ul li a:hover {
+  color: rgb(64, 130, 64);
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+ .top-header{
+    display: block;
+    margin: 0 auto;
+  }
+  nav {
+    display: block;
+  }
+  .nav-links ul li {
+    display: block;
+    margin: 0.5rem;
+    text-align: center;
+  }
 
 /* Main section */
 
@@ -62,7 +134,46 @@ header {
   padding-top: 20px;
 }
 
-/* Dish card */
+
+ .logo {
+   font-size: 2rem
+ }
+
+}
+
+/* FOOTER */
+
+footer {
+  width: 100vw;
+  text-align: center;
+  height: 30vh;
+  color: #fff;
+  padding: 50px 0;
+  background-color: slategrey;
+}
+
+footer h4 {
+  
+  font-size: 2rem;
+}
+footer p {
+  color: #fff;
+  
+}
+
+.icons {
+  
+}
+
+.icons .fab {
+  color: black;
+  margin: 13px;
+  font-size: 2rem;
+  /* cursor: pointer; */
+}
+
+
+
 
 .dish-card {
   display: flex;
@@ -153,3 +264,4 @@ header {
   transform: scale(1.1);
   transition: transform 0.2s;
 }
+
