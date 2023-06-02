@@ -1,123 +1,151 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@300;400&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
+/* HEADER */
 
-/* Header */
-header {
-  display: flex;
-  background-image: url(1844682.jpg);
-  background-size: cover;
-  background-position: center;
-  flex-grow: 2;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 3rem;
+.header {
+  height: 40vh;
+  width: 100vw;
 }
 
 /* .sticky {
   position: fixed;
   width: 100%
 } */
-.header-left-side h1 {
-  margin: 0 10px 0 10px;
+
+.top-header{
+  height:80% ;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.4)),
+  url(/img/petr-sevcovic-fyQr1T3GE34-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.logo{
+  display: flex;
+  color:#fff;
+  font-size:3rem;
+}
+
+.logo-left {
+  margin: 0 10px;
   font-family: "Great Vibes", cursive;
 }
 
-.header-right-side {
-  margin: 0 10px 0 10px;
+.logo-right{
+  margin: 0 10px;
   font-family: "Merriweather", serif;
 }
 
-/* Menu row */
-.menu-section-row {
-  flex-grow: 1;
+.end-header{
+  height:20%;
+}
+
+.end-header ul{
+  height: 100%;
   display: flex;
+  list-style-type: none;
   align-items: center;
   justify-content: space-around;
   color: dimgrey;
-  padding-top: 20px;
+  margin: 2rem;
 }
 
-.menu-section-row h3 {
+.end-header ul li a{
   font-family: "Merriweather", serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color:slategrey;
 }
 
-.menu-section-row h3:hover {
+.end-header ul li a:hover {
   color: rgb(64, 130, 64);
   cursor: pointer;
 }
 
-/* Main section */
+@media (max-width: 700px) {
 
-section {
-  flex-grow: 10;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  padding: 50px;
-  background-color: rgb(217, 217, 217);
+ .top-header{
+    display: block;
+    margin: 0 auto;
+  }
+  nav {
+    display: block;
+  }
+  .nav-links ul li {
+    display: block;
+    margin: 0.5rem;
+    text-align: center;
+  }
+
+ .logo {
+   font-size: 2rem
+ }
+
 }
 
-/* Dish card */
+/* KRISTE */
 
-.dish-card {
-  display: flex;
-  flex-direction: column;
+.kriste{
+  height: 30vh;
+  /* border: 3px solid red; */
+}
+
+/* FOOTER */
+
+footer {
+  width: 100vw;
   text-align: center;
-  justify-content: center;
-  border-radius: 20px;
-background: white;
-  overflow: hidden;
+  height: 30vh;
+  color: #fff;
+  padding: 50px 0;
+  background-color: slategrey;
 }
 
-.dish-card:hover {
-    background: rgb(245, 245, 231);
-    cursor: pointer;
+footer h4 {
+  
+  font-size: 2rem;
+}
+footer p {
+  color: #fff;
+  
 }
 
-.dish-card ul,
-li {
-  /* font-family: 'Great Vibes', cursive; */
-  font-family: "Merriweather", serif;
-  list-style: none;
+.icons {
+  
 }
 
-.dish-card li {
-  font-family: 'Great Vibes', cursive;
-
-  font-size: 18px;
-  color: dimgrey;
+.icons .fab {
+  color: black;
+  margin: 13px;
+  font-size: 2rem;
+  /* cursor: pointer; */
 }
 
-.dish-card-top {
-  flex-grow: 1;
-  box-sizing:content-box;
-  height: 50vh;
-}
 
-.dish-card-top img {
-  background-size: cover;
-  object-fit:cover;
-  width: 100%;
-  min-height:100% ;
-}
 
-.dish-card-bottom {
-  flex-grow: 2;
-}
-
-/* footer {
-  display: flex;
-  flex-grow: 1;
-  background: grey;
-} */
