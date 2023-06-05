@@ -110,6 +110,8 @@
   padding-top: 20px;
 }
 
+/* DISH CARD */
+
 .dish-card {
   display: flex;
   height: 330px;
@@ -161,6 +163,8 @@ h5 {
 .dish-card-bottom p {
   font-family: "Great Vibes", cursive;
 }
+
+
 
 .drinks-container {
   height: 170px;
